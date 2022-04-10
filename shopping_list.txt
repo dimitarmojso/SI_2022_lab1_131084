@@ -2,4 +2,5 @@ bread x 2
 eggs x 3
 milk x 2
 sugar x 1
-apples x 3
+peppers x 1
+honey x 3

@@ -1,0 +1,91 @@
+4. git clone https://github.com/dimitarmojso/SI_2022_lab1_131084.git (Se klonira remote repository-to lokalno kaj nas)
+5. git add . (se dodavaat site fajlovi i promeni koi se vo sostojba untracked)
+   git commit -m "Add 5 items to the shopping list" (se dodavaat promenite koi se naogaat vo staging i se pravi commit)
+6. git commit -a -m "Add quantities to the items" (se dodavaat novite promeni i se pravi nov commit)
+7. git branch branch1 (se kreira nov branch1)
+   git branch branch2 (se kreira nov branch2)
+8. git log (se proveruvaat dosegasnite logovi na momentalniot branch)
+
+   Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+   Date:   Sun Apr 10 20:42:49 2022 +0200
+
+     Add quantities to items
+
+   commit 620572c5968f1f40ec301ff65a11584a2494aedf
+   Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+   Date:   Sun Apr 10 20:41:53 2022 +0200
+
+     Add 5 items to the shopping list
+
+   commit 3be4dad7a32a22f3feda2a4d7ed2ebb3427c8d85 (origin/master, origin/HEAD)
+   Author: Dimitar Mojsoski <dimitar.mojso@gmail.com>
+   Date:   Sun Apr 10 20:39:17 2022 +0200
+
+     Initial commit
+
+9. git push -u origin --all (se sinhroniziraat site promeni lokalno so remote repository-to)
+10. git checkout branch1 (se prefrlame na branch1)
+11. git commit -a -m "Change quantity of item #5" (se pravat promeni na toj branch i se dodava nov commit)
+12. git checkout master (se prefrlame nazad na master)
+13. git commit -a -m "Change quantity of item #2" (se pravat promeni na master i se pravi nov commit)
+14. git push -u origin --all (se sinhroniziraat novite promeni lokalno so remote repo)
+15. git checkout branch2 (se preflame sega na branch2)
+16. git commit -a -m "Modify item #4" (se pravi promena i se dodava nov commit)
+17. git log (se proveruvaat logovite na branch2)
+
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 20:54:08 2022 +0200
+
+      Modify item #4
+
+    commit 335081a300a96e980a0339a9764de8f33e203681 (origin/branch2)
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 20:42:49 2022 +0200
+
+      Add quantities to items
+
+    commit 620572c5968f1f40ec301ff65a11584a2494aedf
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 20:41:53 2022 +0200
+
+      Add 5 items to the shopping list
+
+    commit 3be4dad7a32a22f3feda2a4d7ed2ebb3427c8d85
+    Author: Dimitar Mojsoski <dimitar.mojso@gmail.com>
+    Date:   Sun Apr 10 20:39:17 2022 +0200
+
+      Initial commit
+
+18. git add . (se pravi nova promena i se dodavat na staging)
+    git commit --amend -m "Modify item #4 and add item #6" (se pravi promena na porakata na posledniot commit so novite promeni posle toj commit)
+19. git log (se proveruvaat pak logovite)
+
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 21:01:52 2022 +0200
+
+      Modify item #4 and add item #6
+
+    commit 335081a300a96e980a0339a9764de8f33e203681 (origin/branch2)
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 20:42:49 2022 +0200
+
+      Add quantities to items
+
+    commit 620572c5968f1f40ec301ff65a11584a2494aedf
+    Author: Dimitar Mojsoski <dimitar.mojsoski@polarcape.com>
+    Date:   Sun Apr 10 20:41:53 2022 +0200
+
+      Add 5 items to the shopping list
+
+   commit 3be4dad7a32a22f3feda2a4d7ed2ebb3427c8d85
+   Author: Dimitar Mojsoski <dimitar.mojso@gmail.com>
+   Date:   Sun Apr 10 20:39:17 2022 +0200
+
+     Initial commit
+
+20. git checkout master (se vrakame na master)
+    git merge branch1 (se spojuva grankata master so branch1, tuka nema konflikt zatoa sto nema promeni na master od posledniot zaednicki commit so branch1)
+21. git merge branch2 (se spojuva grankata master so branch2, tuka ima konflikt zatoa so ima promeni na isti mesta vo fajlot na dvata brancha master i branch2)
+22. git add . (se dodava nov file i se dodavaat site promeni na staging)
+    git commit -a -m "Add docs" (se pravi nov commit)
+23. git push -u origin --all (se sinhroniziraat site lokalni promeni so remote)
