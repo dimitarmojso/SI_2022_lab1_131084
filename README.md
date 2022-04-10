@@ -1,1 +1,1 @@
-# SI_2022_lab1_131084
+# Dimitar Mojsoski 131084
